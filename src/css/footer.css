@@ -1,0 +1,103 @@
+.footer {
+  margin-top: 88px;
+  max-height: 358px;
+  height: 100%;
+  background-color: #131313;
+}
+.footer__container {
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 100px;
+  margin-bottom: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+}
+.footer__nav {
+  display: flex;
+}
+
+.footer__colomn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.footer__colomn:last-child {
+  margin-right: 0px;
+}
+.footer__h3 {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.footer__colomn_row {
+  margin-top: 16px;
+}
+.footer__colomn__item {
+  margin-bottom: 13px;
+}
+.footer__colomn__item:last-child {
+  margin-bottom: 0px;
+}
+.footer__colomn__text {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.contact__autor {
+  display: block;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 15.99px;
+  text-align: left;
+  color: #ca5ff6;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-left: 37px;
+}
+.contact__text {
+  color: #8d8d8d;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin-top: 14px;
+}
+.contact__icon_row {
+  display: flex;
+  margin-top: 23px;
+  align-items: center;
+}
+.contact__icon_item {
+  margin-right: 31px;
+}
+.contact__icon_item:last-child {
+  margin-right: 0px;
+}
+.contact__icon__img {
+}
