@@ -1,15 +1,21 @@
 body {
-  background-color: #000000;
 }
-.container {
+.container-full {
   max-width: 1920px;
   width: 100%;
-  background-color: #000000;
-  /* background-color: cadetblue; */
-  padding-top: 52px;
-  /* height: 100%; */
-  height: 2397px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  font-family: "Gotham Pro", sans-serif;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.container {
+  max-width: 1245px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
