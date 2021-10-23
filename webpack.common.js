@@ -27,11 +27,15 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/,
         type: "asset/resource",
+        generator: {
+          filename: "images/[hash][ext]",
+        },
       },
+
       {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        test: /\.(woff(2)?|eot|ttf|otf)$/,
         type: "asset/inline",
       },
 

@@ -1,7 +1,7 @@
 body {
 }
 .container-full {
-  max-width: 1920px;
+  max-width: 1940px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -9,6 +9,8 @@ body {
   font-family: "Gotham Pro", sans-serif;
   background-color: #ffffff;
   position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container {
@@ -18,4 +20,10 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+.title {
+  color: #3f3f3f;
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  font-weight: 500;
 }

@@ -1,0 +1,94 @@
+.reviews {
+  margin-top: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.reviews__row {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+.reviews__title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.reviews__title__text {
+  margin-top: 11px;
+  color: #000000;
+  font-family: "Gotham Pro";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 114.2%;
+  text-align: left;
+}
+.reviews__cart {
+  display: flex;
+  flex-direction: column;
+  max-width: 353px;
+  width: 100%;
+  border-radius: 36px;
+  background-color: #19772e;
+  margin-right: 18px;
+}
+.reviews__cart:last-child {
+  margin-right: 0;
+}
+.reviews__cart__title {
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
+  padding-right: 20px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.reviews__cart__title__ava {
+  max-width: 65px;
+  width: 100%;
+  max-height: 64px;
+  height: 100%;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.reviews__cart_avatar {
+}
+.reviews__cart__title__body {
+}
+.reviews__cart__title__body__name {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24.97px;
+  text-align: left;
+}
+.reviews__cart__title__body__rating {
+}
+.reviews__cart__title__body__rating__star {
+}
+.reviews__cart__body {
+  padding-top: 21px;
+  padding-left: 24px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  background-color: #2dbc4c;
+  border-radius: 0 0 36px 36px;
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20.81px;
+  text-align: justify;
+}
+.reviews__leaves {
+  content: url("../img/reviews_leaves.png");
+  position: absolute;
+  width: 794px;
+  height: 876px;
+  top: -230px;
+  left: 0;
+}

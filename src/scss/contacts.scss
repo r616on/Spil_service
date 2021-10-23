@@ -1,0 +1,103 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+}
+
+.contacts__map {
+  width: 54.8%;
+}
+.contacts__map_img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.contacts__body {
+  position: relative;
+  width: 45.2%;
+  background-image: url("../img/contacts/background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 1;
+
+  padding-left: 43px;
+  padding-bottom: 56px;
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 128.2%;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90.07deg,
+    #19772e 20.78%,
+    rgba(25, 119, 46, 0) 98.92%
+  );
+  z-index: 1;
+}
+.contacts__body__row {
+  position: relative;
+  z-index: 3;
+}
+
+.contacts__body__title {
+  min-height: 90px;
+  margin-top: 22px;
+  font-size: 90px;
+  padding: 40px 0;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px rgba(225, 225, 225, 0.37);
+}
+
+.contacts__body__tel {
+  margin-top: 20px;
+}
+.tel__text {
+  color: #ffffff;
+  line-height: 128.2%;
+  text-align: left;
+}
+.tel__number {
+  line-height: 34.26px;
+  text-align: left;
+}
+.contacts__body__email {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 23.08px;
+  text-align: left;
+}
+.email__text {
+}
+.email__address {
+  margin-top: 8px;
+  font-size: 24px;
+  line-height: 27.41px;
+  text-align: left;
+}
+.contacts__body__text {
+  margin-top: 23px;
+}
+.contacts__body__btn {
+  margin-top: 30px;
+  width: 265px;
+  height: 45px;
+  border-radius: 23px;
+  background-color: #ffffff;
+  color: #2dbc4c;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
