@@ -69,6 +69,7 @@
   line-height: normal;
   text-align: left;
   margin-right: 40px;
+  color: #3f3f3f;
 }
 .header__tel::before {
   content: url("../img/icon/tel.png");
@@ -151,7 +152,6 @@
   width: 100%;
   min-height: 481px;
   height: 100%;
-
   display: flex;
   align-items: center;
   background-image: url("../img/buner_background.png");
@@ -213,4 +213,78 @@
   font-size: 16px;
   font-weight: 500;
   text-align: left;
+}
+.header__top_mobile {
+  display: none;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+}
+.burger {
+}
+.burger_item {
+  display: block;
+  width: 45px;
+  height: 6px;
+  background-color: #4b4b4b;
+  margin-bottom: 4px;
+  &.green {
+    width: 37px;
+    height: 6px;
+    background-color: #2dbc4c;
+  }
+}
+.burger__logo {
+}
+
+.burger__icon {
+}
+.WhatsApp {
+  content: url("../img/icon/WhatsAppGreen.png");
+  width: 23px;
+  height: 23px;
+}
+.tel {
+  content: url("../img/icon/tel_mobile.png");
+  width: 17px;
+  height: 17px;
+  margin-right: 21px;
+}
+
+@media (max-width: 400px) {
+  .header {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__top_mobile {
+    display: flex;
+  }
+  .header__baner {
+    min-height: 538px;
+  }
+  .baner__titel {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+    line-height: 43.93px;
+  }
+  .baner__text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 28.59px;
+    margin-bottom: 44px;
+  }
+  .baner__btn {
+    align-self: center;
+  }
 }

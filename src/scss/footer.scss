@@ -1,103 +1,74 @@
-/* .footer {
-  margin-top: 88px;
-  max-height: 358px;
-  height: 100%;
-  background-color: #131313;
-}
-.footer__container {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 100px;
-  margin-bottom: 87px;
+.footer {
+  min-height: 144px;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   align-items: center;
-}
-.footer__logo {
-}
-.footer__nav {
-  display: flex;
+  flex-direction: row;
+  font-family: "Gotham Pro";
 }
 
-.footer__colomn {
-  display: flex;
-  flex-direction: column;
-  margin-right: 100px;
+.footer__logo {
 }
-.footer__colomn:last-child {
-  margin-right: 0px;
-}
-.footer__h3 {
-  color: #ffffff;
-  font-family: "Gotham Pro";
-  font-size: 18px;
+.footer__logo_img {
+  color: #1e1e1e;
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
 }
-.footer__colomn_row {
-  margin-top: 16px;
-}
-.footer__colomn__item {
-  margin-bottom: 13px;
-}
-.footer__colomn__item:last-child {
-  margin-bottom: 0px;
-}
-.footer__colomn__text {
-  color: #ffffff;
-  font-family: "Gotham Pro";
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
-}
-.footer__contact {
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-}
-.contact__autor {
-  display: block;
-  color: #ffffff;
+.footer__logo_text {
+  margin-top: 11px;
+  color: #000000;
   font-family: "Josefin Sans";
   font-size: 14px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
   line-height: 15.99px;
   text-align: left;
-  color: #ca5ff6;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  margin-left: 37px;
+  span {
+    font-size: 11px;
+  }
 }
-.contact__text {
-  color: #8d8d8d;
-  font-family: "Gotham Pro";
-  font-size: 16px;
+
+.footer__privacy {
+  color: #000000;
+  font-size: 18px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
-  margin-top: 14px;
+  line-height: 20.56px;
 }
-.contact__icon_row {
-  display: flex;
-  margin-top: 23px;
-  align-items: center;
+.footer__tel {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 25.12px;
 }
-.contact__icon_item {
+.footer__social {
+}
+.footer__social__icon {
   margin-right: 31px;
 }
-.contact__icon_item:last-child {
-  margin-right: 0px;
+.footer__social__icon:last-child {
+  margin-right: 0;
 }
-.contact__icon__img {
-} */
+.insta {
+  content: url("../img/icon/footer/insta.png");
+  width: 26px;
+  height: 26px;
+}
+.vk {
+  content: url("../img/icon/footer/vk.png");
+  width: 31px;
+  height: 26px;
+}
+.telegram {
+  content: url("../img/icon/footer/telegram.png");
+  width: 29px;
+  height: 25px;
+}
+.WhatsUp {
+  content: url("../img/icon/footer/WhatsUp.png");
+  width: 24px;
+  height: 24px;
+}

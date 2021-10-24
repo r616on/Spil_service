@@ -23,7 +23,6 @@
 
 @font-face {
   font-family: "Gotham Pro";
-
   src: local("Gotham Pro Medium"), local("../fonts/gothampro_medium"),
     url("../fonts/gothampro_medium.ttf") format("truetype");
   font-weight: 500;

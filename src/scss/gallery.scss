@@ -1,12 +1,30 @@
 .gallery {
   margin-top: 65px;
+  position: relative;
 }
 
 .gallery__title {
+  position: relative;
   margin-bottom: 21px;
+  z-index: 3;
 }
+.gallery::before {
+  content: "Галерея Галерея Галере";
+  position: absolute;
+  width: 1850px;
+  height: 138px;
+  left: -0px;
+  top: -70px;
 
+  font-family: "Gotham Pro";
+  font-size: 144px;
+  line-height: 138px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #e1e1e1;
+  z-index: 1;
+}
 .gallery__row {
+  position: relative;
   padding-left: 45px;
   padding-right: 45px;
   width: 100%;
@@ -14,6 +32,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 3;
 }
 .gallery__item {
   width: 100%;

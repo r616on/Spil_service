@@ -1,5 +1,5 @@
 import "./css/nulStyle.css";
-import "./css/style.css";
+import "./scss/style.scss";
 import "./css/fonts.css";
 import "./scss/main.scss";
 import "./scss/header.scss";
