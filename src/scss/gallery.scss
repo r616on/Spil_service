@@ -55,9 +55,11 @@
 }
 @media (max-width: 400px) {
   .gallery {
+    margin-top: 42px;
   }
   .gallery::before {
     width: 100%;
+    top: -55px;
   }
   .gallery__row {
     padding-left: 0;

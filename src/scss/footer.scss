@@ -72,8 +72,44 @@
   width: 24px;
   height: 24px;
 }
+
+.develop_mobile {
+  display: none;
+}
 @media (max-width: 400px) {
   .footer {
-    display: none;
+    flex-direction: column;
+    max-width: 235px;
+    padding: 0;
+  }
+  .footer__logo {
+    margin-top: 66px;
+    order: 1;
+    margin-bottom: 21px;
+  }
+  .footer__tel {
+    font-size: 22px;
+    order: 2;
+  }
+  .footer__privacy {
+    order: 3;
+    margin-top: 23px;
+    font-size: 14px;
+  }
+  .footer__social {
+    margin-top: 26px;
+    order: 4;
+  }
+  .footer__logo_text {
+    &.desktop {
+      display: none;
+    }
+  }
+  .develop_mobile {
+    margin-top: 30px;
+    display: block;
+    order: 5;
+    margin-bottom: 48px;
+    font-weight: 400;
   }
 }
