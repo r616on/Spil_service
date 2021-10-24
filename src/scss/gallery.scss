@@ -22,6 +22,7 @@
   color: #ffffff;
   text-shadow: 1px 1px 1px #e1e1e1;
   z-index: 1;
+  overflow: hidden;
 }
 .gallery__row {
   position: relative;
@@ -51,4 +52,28 @@
 }
 .small {
   max-width: 268px;
+}
+@media (max-width: 400px) {
+  .gallery {
+  }
+  .gallery::before {
+    width: 100%;
+  }
+  .gallery__row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .gallery__item {
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 4px;
+  }
+  .big {
+    width: 258px;
+    height: 125px;
+  }
+  .small {
+    width: 114px;
+    height: 125px;
+  }
 }

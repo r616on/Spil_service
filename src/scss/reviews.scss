@@ -92,3 +92,8 @@
   top: -230px;
   left: 0;
 }
+@media (max-width: 400px) {
+  .reviews {
+    display: none;
+  }
+}

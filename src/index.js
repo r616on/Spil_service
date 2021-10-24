@@ -10,7 +10,7 @@ import "./scss/our-services.scss";
 import "./scss/gallery.scss";
 import "./scss/reviews.scss";
 import "./scss/contacts.scss";
-// import "./scss/calculator.scss";
+import "./scss/about.scss";
 // import "./scss/calculator.scss";
 
 // import "./components/templated/templated.css";

@@ -170,6 +170,7 @@
     top: -40px;
     font-size: 96px;
     line-height: 92px;
+    content: "Наши у";
   }
   .our-services__title {
     font-size: 24px;
@@ -206,5 +207,8 @@
   }
   .our-services__text__body {
     text-align: center;
+  }
+  .our-services__leaves-background {
+    display: none;
   }
 }

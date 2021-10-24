@@ -214,15 +214,7 @@
   font-weight: 500;
   text-align: left;
 }
-.header__top_mobile {
-  display: none;
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-  align-items: center;
-}
+
 .burger {
 }
 .burger_item {
@@ -252,6 +244,14 @@
   width: 17px;
   height: 17px;
   margin-right: 21px;
+}
+.header__top_mobile {
+  display: none;
+  height: 65px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
 }
 
 @media (max-width: 400px) {
