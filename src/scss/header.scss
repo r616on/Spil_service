@@ -154,7 +154,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  background-image: url("../img/buner_background.png");
+  background-image: url("../img/buner_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,6 +254,32 @@
   align-items: center;
 }
 
+@media (max-width: 1300px) {
+}
+@media (max-width: 1000px) {
+  .header__WhatsApp {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .header__location {
+    display: none;
+  }
+  .baner__titel {
+    font-size: 43px;
+  }
+}
+@media (max-width: 600px) {
+  .header__top {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__top_mobile {
+    display: flex;
+  }
+}
 @media (max-width: 400px) {
   .header {
     width: 100%;
