@@ -350,3 +350,8 @@
     display: none;
   }
 }
+@media (max-width: 350px) {
+  .our-services__text__order {
+    left: 3.5vw;
+  }
+}

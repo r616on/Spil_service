@@ -269,7 +269,10 @@
     font-size: 43px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+  .header {
+    padding-top: 0;
+  }
   .header__top {
     display: none;
   }
