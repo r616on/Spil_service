@@ -92,6 +92,32 @@
   height: 876px;
   top: -230px;
   left: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .reviews__cart {
+    display: none;
+  }
+  .review_one {
+    display: flex;
+  }
+  .review_two {
+    display: flex;
+    margin-right: 0;
+  }
+}
+@media (max-width: 830px) {
+  .reviews__cart {
+    display: none;
+  }
+  .review_one {
+    display: flex;
+    margin-right: 0;
+  }
+  .review_two {
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .reviews {
@@ -109,6 +135,9 @@
   .review_one {
     display: flex;
     margin-right: 0;
+  }
+  .reviews__title__text {
+    text-align: center;
   }
   .reviews__leaves {
     content: url("../img/reviews_leaves_mobile.png");
