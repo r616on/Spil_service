@@ -104,45 +104,43 @@
   top: 0;
   left: 0;
   z-index: 1;
+  display: none;
 }
 .hiden-text {
-  display: block;
+  display: none;
   font-family: "Gotham Pro";
   font-size: 144px;
   font-weight: 500;
   text-align: left;
   white-space: pre;
   position: absolute;
-  white-space: pre;
   color: #ffffff;
   top: -100px;
   text-shadow: 1px 1px 1px #e1e1e1;
   z-index: 1;
   overflow: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 .hiden-text_one {
-  width: 1881px;
   left: 40px;
   top: 0;
   overflow: hidden;
   max-width: 100%;
 }
 .hiden-text_two {
-  width: 2863px;
   left: -414px;
   top: 110px;
   overflow: hidden;
   max-width: 100%;
 }
 .hiden-text_three {
-  width: 1880px;
   left: 40px;
   top: 220px;
   overflow: hidden;
   max-width: 100%;
 }
 .hiden-text_four {
-  width: 2863px;
   left: -414px;
   top: 330px;
   overflow: hidden;
@@ -202,11 +200,6 @@
     margin-top: 46px;
   }
   .about__row {
-    // position: relative;
-    // flex-direction: column;
-    // // justify-content: flex-end;
-    // z-index: 5;
-    // flex-direction: column-reverse;
   }
   .about__bg_branch::before {
     display: none;
