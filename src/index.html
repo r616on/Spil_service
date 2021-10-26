@@ -144,60 +144,55 @@
           </div>
         </div>
       </section>
-      <!-- <div class="calculator">
+      <div class="calculator">
         <div class="container">
           <div class="calculator__title title">Калькулятор</div>
           <div class="calculator__text text">
             Введите данные и получите рассчет стоимости оналйн
           </div>
-          <div class="calculator__row">
-            <div class="calculator__row__left">
-              <select
-                class="type-of-tree form-select"
-                aria-label="Default select example"
-                name="calculator"
-              >
-                <option selected>Выбирите вид дерева</option>
-                <option value="1">Выбирите вид дерева 1</option>
-                <option value="2">Выбирите вид дерева 2</option>
-                <option value="3">Выбирите вид дерева 3</option>
-                <option value="4">Выбирите вид дерева 4</option>
-              </select>
-              <div class="calculator__diameter">
-                <div class="diameter__title">Диаметр дерева</div>
-                <div class="diameter__row">
-                  <div class="diameter__item" data-value="30">До 30см</div>
-                  <div class="diameter__item" data-value="40">До 40см</div>
-                  <div class="diameter__item" data-value="50">До 50см</div>
-                  <div class="diameter__item" data-value="60">До 60см</div>
-                  <div class="diameter__item" data-value="70">До 70см</div>
-                  <div class="diameter__item" data-value="80">До 80см</div>
-                </div>
-                <div class="diameter__footer">
-                  Стоимости ориентировочная и не является офертой
-                </div>
-              </div>
+        </div>
+        <div class="container calculator__row">
+          <div class="calculator__row__left">
+            <div class="type-of-tree form-select calculator_item">
+              Выберите вид дерева
             </div>
-            <div class="calculator__row__right">
-              <div class="tree-height">
-                <div class="tree-height__title"></div>
-                <div class="tree-height__icon left"></div>
-                <div class="tree-height__counter"></div>
-                <div class="tree-height__icon right"></div>
-              </div>
-              <div class="cramped-conditions">
-                <div class="tree-height__title">Стеснённые условия</div>
-                <input class="tree-height__checkbox" type="checkbox" checked />
-              </div>
-              <div class="total">
-                <div class="total__text"></div>
-                <div class="total__num"></div>
-                <div class="total__icon"></div>
+
+            <div class="calculator__diameter calculator_item">
+              <div class="diameter__title">Диаметр дерева</div>
+              <div class="diameter__row">
+                <div class="diameter__item" data-value="30">До 30см</div>
+                <div class="diameter__item" data-value="40">До 40см</div>
+                <div class="diameter__item active" data-value="50">До 50см</div>
+                <div class="diameter__item" data-value="60">До 60см</div>
+                <div class="diameter__item" data-value="70">До 70см</div>
+                <div class="diameter__item" data-value="80">До 80см</div>
               </div>
             </div>
           </div>
+          <div class="calculator__row__right">
+            <div class="tree-height calculator_item">
+              <div class="tree-height__title">Высота дерева (метр)</div>
+              <div class="tree-height__icon__row">
+                <div class="tree-height__icon left"></div>
+                <div class="tree-height__counter">1</div>
+                <div class="tree-height__icon right"></div>
+              </div>
+            </div>
+            <div class="cramped-conditions calculator_item">
+              Стеснённые условия
+              <div class="conditions_btn switch-btn inactive"></div>
+            </div>
+            <div class="calculator__total">
+              <div class="total__text">Итоговая стоимость от:</div>
+              <div class="total__num">25.000</div>
+            </div>
+          </div>
         </div>
-      </div> -->
+        <div class="container calculator__price-estimated">
+          Стоимости ориентировочная и не является офертой
+        </div>
+      </div>
+
       <section id="choose-us" class="choose-us container-full">
         <div class="choose-us__background">
           <div class="choose-us__background__left"></div>
