@@ -15,3 +15,7 @@ import "./scss/about.scss";
 
 // import "./components/templated/templated.css";
 import "./components/app";
+
+// import "./components/ChiefSlider/chief-slider.css";
+
+// import "./components/ChiefSlider/chief-slider";

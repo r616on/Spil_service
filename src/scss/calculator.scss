@@ -69,16 +69,58 @@
 }
 .calculator__row__left {
 }
-.type-of-tree {
-  justify-content: space-between;
-  padding-left: 57px;
-  margin-bottom: 14px;
-}
+
 .type-of-tree::after {
   content: url("../img/icon/calculator/Arrow.png");
   width: 22px;
   height: 13px;
   margin-right: 32px;
+}
+
+.type-of-tree_opions {
+  position: absolute;
+  width: 100%;
+  top: 66px;
+  left: -2000px;
+  z-index: 10;
+  overflow: hidden;
+}
+.type-of-tree {
+  justify-content: space-between;
+  padding-left: 57px;
+  margin-bottom: 14px;
+  position: relative;
+  &.active {
+    .type-of-tree_opions {
+      left: 0;
+    }
+    &.type-of-tree::after {
+      transform: rotate(180deg);
+      margin-top: 25px;
+    }
+  }
+}
+.type-of-tree_opions__row {
+  background-color: #ffffff;
+  border: 1px solid #2dbc4c;
+  border-radius: 0 0 11px 11px;
+  border-width: 0 1px 1px 1px;
+}
+.opions__item {
+  padding-left: 56px;
+  min-height: 79px;
+  display: flex;
+  align-items: center;
+  font-family: Gotham Pro;
+  font-size: 22px;
+  line-height: 138.7%;
+  color: #353535;
+  &.active {
+    &.opions__item {
+      background: #2dbc4c;
+      color: #ffffff;
+    }
+  }
 }
 .form-select {
 }
@@ -200,10 +242,10 @@
   width: 60px;
   height: 36px;
   border-radius: 10px;
-  background-color: #2dbc4c;
   position: absolute;
   top: 0;
-  left: 0;
+  background-color: #9c9c9c;
+  left: 79px;
 }
 .switch-btn {
   width: 115px;
@@ -213,10 +255,10 @@
   margin-right: 45px;
   position: relative;
   cursor: pointer;
-  &.inactive {
+  &.active {
     &.switch-btn::before {
-      background-color: #9c9c9c;
-      left: 79px;
+      background-color: #2dbc4c;
+      left: 0;
     }
   }
 }
@@ -259,6 +301,9 @@
   .calculator__total {
     margin-left: 30px;
   }
+  .opions__item {
+    padding-left: 30px;
+  }
 }
 @media (max-width: 1125px) {
   .calculator__text {
@@ -297,6 +342,7 @@
     padding-right: 38px;
   }
 }
+
 @media (max-width: 710px) {
   .diameter__item {
     max-width: 152px;
@@ -357,6 +403,9 @@
   .calculator__text {
     font-size: 20px;
   }
+  .opions__item {
+    font-size: 18px;
+  }
 }
 @media (max-width: 470px) {
   .calculator__row {
@@ -384,8 +433,13 @@
   .switch-btn::before {
     height: 30px;
     width: 50px;
-  }
-  .switch-btn.inactive.switch-btn::before {
     left: 50px;
+  }
+  .switch-btn.active.switch-btn::before {
+    left: 0px;
+  }
+  .opions__item {
+    padding: 15px 10px 13px;
+    font-size: 18px;
   }
 }

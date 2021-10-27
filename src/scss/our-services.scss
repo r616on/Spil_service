@@ -108,7 +108,9 @@
   text-align: center;
 }
 .active {
-  background-color: #2dbc4c;
+  &.our-services__name__item {
+    background-color: #2dbc4c;
+  }
   .our-services__name__item_icon {
     display: block;
   }

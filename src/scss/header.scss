@@ -116,6 +116,8 @@
   padding-right: 32px;
 }
 .header__nav {
+}
+.header__nav__row {
   display: flex;
   align-self: center;
   align-items: center;
@@ -134,9 +136,51 @@
     background-color: #2dbc4c;
     .nav__text {
       color: #ffffff;
+      font-size: 16px;
     }
   }
 }
+
+.active {
+  &.header__nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 8;
+  }
+  &.header__nav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 7;
+  }
+  .header__nav__row {
+    position: relative;
+    z-index: 8;
+    flex-direction: column;
+  }
+  .nav__item {
+    background-color: transparent;
+  }
+  .nav__text {
+    color: white;
+    font-size: 25px;
+  }
+  .active {
+    .nav__text {
+      color: white;
+      font-size: 25px;
+    }
+  }
+}
+
 .nav__text {
   font-family: "Gotham Pro";
   font-size: 16px;
@@ -215,7 +259,34 @@
   text-align: left;
 }
 
-.burger {
+.active {
+  &.burger {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    z-index: 10;
+  }
+  .burger_item {
+    display: none;
+    background-color: white;
+    &.first {
+      display: block;
+      width: 45px;
+      height: 6px;
+      transform: rotate(45deg);
+      margin-top: 19px;
+    }
+
+    &.green {
+      display: block;
+      width: 45px;
+      height: 6px;
+      transform-origin: center center;
+      transform: rotate(-45deg);
+      margin-top: -9px;
+      background-color: white;
+    }
+  }
 }
 .burger_item {
   display: block;
