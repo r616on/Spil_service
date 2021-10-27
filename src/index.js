@@ -15,7 +15,10 @@ import "./scss/about.scss";
 
 // import "./components/templated/templated.css";
 import "./components/app";
-
-// import "./components/ChiefSlider/chief-slider.css";
+import "@fancyapps/ui/dist/fancybox.css";
+// import "./components/FancyBox/jquery-3.3.1.min.js";
+// import "./components/FancyBox/jquery.fancybox-1.3.4";
+// require("./components/fancybox/jquery.fancybox-1.3.4.pack");
+// import "./components/FancyBox/jquery.fancybox-1.3.4.css";
 
 // import "./components/ChiefSlider/chief-slider";

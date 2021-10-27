@@ -1,6 +1,7 @@
 import Services from "./Services/Services";
 import Сalculator from "./Сalculator/Сalculator";
 import Burger from "./Burger/Burger";
+import { Fancybox } from "@fancyapps/ui";
 
 import backgroundImage from "../img/buner_background.jpg";
 document.addEventListener("DOMContentLoaded", () => {
