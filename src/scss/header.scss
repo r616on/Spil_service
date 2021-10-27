@@ -147,9 +147,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    max-width: 100%;
     top: 0;
     left: 0;
     z-index: 8;
+    margin: 0 auto;
   }
   &.header__nav::before {
     content: "";
@@ -165,6 +167,7 @@
     position: relative;
     z-index: 8;
     flex-direction: column;
+    text-align: center;
   }
   .nav__item {
     background-color: transparent;

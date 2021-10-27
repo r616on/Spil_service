@@ -43,6 +43,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^4.0.7",
     "html-webpack-externals-plugin": "^3.8.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "swiper": "^7.2.0"
   }
 }

@@ -4,6 +4,7 @@
   position: relative;
 }
 .reviews__container {
+  min-width: 0;
 }
 .reviews__row {
   display: flex;
@@ -15,6 +16,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  margin-bottom: 38px;
 }
 
 .reviews__title__text {
@@ -29,11 +31,12 @@
 .reviews__cart {
   display: flex;
   flex-direction: column;
-  max-width: 353px;
   width: 100%;
   border-radius: 36px;
   background-color: #19772e;
   margin-right: 18px;
+  max-width: 353px;
+  min-width: 0;
 }
 .reviews__cart:last-child {
   margin-right: 0;
@@ -95,30 +98,53 @@
   max-width: 100%;
   overflow: hidden;
 }
-@media (max-width: 1200px) {
-  .reviews__cart {
-    display: none;
-  }
-  .review_one {
-    display: flex;
-  }
-  .review_two {
-    display: flex;
-    margin-right: 0;
+
+.swiper {
+  min-width: 0;
+  max-width: 1095px;
+  text-align: center;
+}
+.wrapper {
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide-next-active {
+}
+.swiper-slide-next {
+}
+@media (max-width: 410px) {
+  .reviews__container {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 100%;
   }
 }
-@media (max-width: 830px) {
-  .reviews__cart {
-    display: none;
-  }
-  .review_one {
-    display: flex;
-    margin-right: 0;
-  }
-  .review_two {
-    display: none;
-  }
-}
+// @media (max-width: 1200px) {
+//   .reviews__cart {
+//     display: none;
+//   }
+//   .review_one {
+//     display: flex;
+//   }
+//   .review_two {
+//     display: flex;
+//     margin-right: 0;
+//   }
+// }
+// @media (max-width: 830px) {
+//   .reviews__cart {
+//     display: none;
+//   }
+//   .review_one {
+//     display: flex;
+//     margin-right: 0;
+//   }
+//   .review_two {
+//     display: none;
+//   }
+// }
 @media (max-width: 400px) {
   .reviews {
     margin-top: 45px;
@@ -129,9 +155,7 @@
   .reviews__row {
     margin-top: 26px;
   }
-  .reviews__cart {
-    display: none;
-  }
+
   .review_one {
     display: flex;
     margin-right: 0;
@@ -148,5 +172,11 @@
     top: 65px;
     left: 0;
     overflow: hidden;
+    z-index: 1;
+  }
+}
+@media (max-width: 400px) {
+  .reviews__leaves {
+    display: none;
   }
 }

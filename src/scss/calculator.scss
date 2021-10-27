@@ -389,6 +389,7 @@
   }
   .tree-height__icon__row {
     padding-bottom: 20px;
+    margin-right: 0;
   }
   .calculator_item {
     font-size: 18px;
@@ -442,4 +443,9 @@
     padding: 15px 10px 13px;
     font-size: 18px;
   }
+  .type-of-tree.active.type-of-tree::after {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 390px) {
 }
