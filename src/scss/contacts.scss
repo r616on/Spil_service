@@ -19,8 +19,8 @@
   background-image: url("../img/contacts/background.jpg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: auto 100%;
   z-index: 1;
-
   padding-left: 43px;
   padding-bottom: 56px;
   color: #ffffff;
@@ -58,6 +58,7 @@
   font-weight: normal;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px rgba(225, 225, 225, 0.37);
+  // text-shadow: 0 -1px #e1e1e1, 1px 0 #e1e1e1, 0 1px #e1e1e1, -1px 0 #e1e1e1;
 }
 
 .contacts__body__tel {

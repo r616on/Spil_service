@@ -4,7 +4,6 @@
 }
 .calculator::before {
   content: "Калькулятор Калькулятор Калькулятор";
-  max-width: 100%;
   width: 2996px;
   height: 138px;
   font-family: "Gotham Pro";
@@ -13,8 +12,12 @@
   position: absolute;
   overflow: hidden;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #e1e1e1;
-  bottom: -40px;
+  text-shadow: 0 -1px #e1e1e1, 1px 0 #e1e1e1, 0 1px #e1e1e1, -1px 0 #e1e1e1;
+  filter: blur(1px);
+  bottom: -50px;
+  left: 0;
+  max-width: 100%;
+  z-index: -1;
 }
 .calculator__title {
   color: #3f3f3f;
@@ -50,6 +53,8 @@
   width: 100%;
   display: flex;
   margin-top: 20px;
+  z-index: 5;
+  position: relative;
 }
 .calculator_item {
   padding-top: 25px;

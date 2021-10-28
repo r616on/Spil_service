@@ -20,7 +20,8 @@
   font-size: 144px;
   line-height: 138px;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #e1e1e1;
+  text-shadow: 0 -1px #e1e1e1, 1px 0 #e1e1e1, 0 1px #e1e1e1, -1px 0 #e1e1e1;
+  filter: blur(1px);
   z-index: 1;
   overflow: hidden;
 }

@@ -116,7 +116,8 @@
   position: absolute;
   color: #ffffff;
   top: -100px;
-  text-shadow: 1px 1px 1px #e1e1e1;
+  text-shadow: 0 -1px #e1e1e1, 1px 0 #e1e1e1, 0 1px #e1e1e1, -1px 0 #e1e1e1;
+  filter: blur(1px);
   z-index: 1;
   overflow: hidden;
   max-width: 100%;
@@ -131,7 +132,7 @@
   left: -414px;
   top: 110px;
   overflow: hidden;
-  max-width: 100%;
+  max-width: calc(100% - 414px);
 }
 .hiden-text_three {
   left: 40px;
@@ -143,7 +144,7 @@
   left: -414px;
   top: 360px;
   overflow: hidden;
-  max-width: 100%;
+  max-width: calc(100% - 414px);
 }
 .about__left__row {
 }
