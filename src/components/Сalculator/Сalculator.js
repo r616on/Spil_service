@@ -20,25 +20,31 @@ export default class Сalculator {
       crampedConditions = 1000;
     }
     let price;
+    function addpoint(price) {
+      price = [...String(price)];
+      price.splice([price.length - 3], 0, ".");
+      price = String(price).replace(/[\s,%]/g, "");
+      return price;
+    }
     if (heightCounter === 0) {
       return;
     }
     if (type === 3 || type === 6) {
       price =
         500 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
-      this.totalNum.innerText = price;
+      this.totalNum.innerText = addpoint(price);
     } else if (type === 1 || type === 2) {
       price =
         430 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
-      this.totalNum.innerText = price;
+      this.totalNum.innerText = addpoint(price);
     } else if (type === 5) {
       price =
         350 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
-      this.totalNum.innerText = price;
+      this.totalNum.innerText = addpoint(price);
     } else if (type === 4) {
       price =
         300 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
-      this.totalNum.innerText = price;
+      this.totalNum.innerText = addpoint(price);
     }
   }
   bindToDOM() {

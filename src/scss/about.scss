@@ -4,7 +4,7 @@
 }
 .about__row {
   flex-direction: row;
-  z-index: 3;
+  z-index: 4;
   height: 468px;
   position: relative;
   justify-content: space-between;
@@ -33,6 +33,8 @@
   background-position: right;
   background-size: cover;
   border-radius: 50% 0 0 20px;
+  position: relative;
+  z-index: 7;
 }
 
 .about__bg_branch::before {
@@ -103,11 +105,9 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
-  display: none;
+  z-index: 4;
 }
 .hiden-text {
-  display: none;
   font-family: "Gotham Pro";
   font-size: 144px;
   font-weight: 500;
@@ -120,13 +120,12 @@
   z-index: 1;
   overflow: hidden;
   max-width: 100%;
-  width: 100%;
 }
 .hiden-text_one {
   left: 40px;
   top: 0;
   overflow: hidden;
-  max-width: 100%;
+  max-width: calc(100% - 40px);
 }
 .hiden-text_two {
   left: -414px;
@@ -138,11 +137,11 @@
   left: 40px;
   top: 220px;
   overflow: hidden;
-  max-width: 100%;
+  max-width: calc(100% - 40px);
 }
 .hiden-text_four {
   left: -414px;
-  top: 330px;
+  top: 360px;
   overflow: hidden;
   max-width: 100%;
 }
@@ -155,12 +154,20 @@
 }
 @media (max-width: 1620px) {
 }
+@media (max-width: 1540px) {
+  .about__bg_branch::before {
+    display: none;
+  }
+}
 @media (max-width: 1050px) {
   .about__row {
     height: 350px;
   }
   .about__text {
     max-width: 350px;
+  }
+  .hiden-text_four {
+    display: none;
   }
 }
 @media (max-width: 770px) {
@@ -189,15 +196,23 @@
   .about__logo {
     margin-top: 29px;
   }
-}
-@media (max-width: 1540px) {
-  .about__bg_branch::before {
+  .about_hiden-text {
+    top: 53%;
+  }
+  .hiden-text_three {
     display: none;
   }
 }
+@media (max-width: 470px) {
+  .about {
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 400px) {
   .about {
     margin-top: 46px;
+    margin-bottom: 0;
   }
   .about__row {
   }

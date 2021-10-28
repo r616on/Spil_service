@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackExternalsPlugin = require("html-webpack-externals-plugin");
 
 module.exports = {
   target: "web",
@@ -58,16 +57,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css",
-    }),
-    new HtmlWebpackExternalsPlugin({
-      // optional plugin: inject cdn
-      externals: [
-        {
-          module: "jquery",
-          entry:
-            "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
-        },
-      ],
     }),
   ],
 };
