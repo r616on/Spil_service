@@ -25,20 +25,10 @@ module.exports = {
           },
         ],
       },
-
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|svg|png|gif|ico|eot|ttf|woff2?)(\?v=\d+\.\d+\.\d+)?$/i,
         type: "asset/resource",
-        generator: {
-          filename: "images/[hash][ext]",
-        },
       },
-
-      {
-        test: /\.(woff(2)?|eot|ttf|otf)$/,
-        type: "asset/inline",
-      },
-
       {
         test: /\.(scss|css)$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],

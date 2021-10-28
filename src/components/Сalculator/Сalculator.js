@@ -8,7 +8,7 @@ export default class Сalculator {
       this.heightCounter = this.element.querySelector(".tree-height__counter");
       this.crampedConditions = this.element.querySelector(".conditions_btn");
       this.totalNum = this.element.querySelector(".total__num");
-      this.arrDiametr = [0, 500, 1000, 1500, 2000, 2500, 3000, 4000];
+      this.arrDiametr = [0, 1000, 1000, 1500, 2000, 2500, 3000, 4000];
     }
   }
   calculate() {
@@ -16,9 +16,9 @@ export default class Сalculator {
     const diametr = +this.diameter.dataset.size;
     const heightCounter = +this.heightCounter.innerText;
     let crampedConditions = 0;
-    if (this.crampedConditions.classList.contains("active")) {
-      crampedConditions = 1000;
-    }
+    // if (this.crampedConditions.classList.contains("active")) {
+    //   crampedConditions = 1000;
+    // }
     let price;
     function addpoint(price) {
       price = [...String(price)];
@@ -29,21 +29,21 @@ export default class Сalculator {
     if (heightCounter === 0) {
       return;
     }
-    if (type === 3 || type === 6) {
+    if (type === 4 || type === 5) {
       price =
-        500 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
+        450 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
       this.totalNum.innerText = addpoint(price);
     } else if (type === 1 || type === 2) {
       price =
         430 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
       this.totalNum.innerText = addpoint(price);
-    } else if (type === 5) {
+    } else if (type === 6) {
       price =
-        350 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
+        500 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
       this.totalNum.innerText = addpoint(price);
-    } else if (type === 4) {
+    } else if (type === 3) {
       price =
-        300 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
+        500 * heightCounter + +this.arrDiametr[diametr] + crampedConditions;
       this.totalNum.innerText = addpoint(price);
     }
   }
@@ -70,14 +70,14 @@ export default class Сalculator {
     observerHeightCounter.observe(this.heightCounter, {
       childList: true,
     });
-    const observerCrampedConditions = new MutationObserver(
-      (mutationRecords) => {
-        this.calculate();
-      }
-    );
-    observerCrampedConditions.observe(this.crampedConditions, {
-      attributes: true,
-    });
+    // const observerCrampedConditions = new MutationObserver(
+    //   (mutationRecords) => {
+    //     this.calculate();
+    //   }
+    // );
+    // observerCrampedConditions.observe(this.crampedConditions, {
+    //   attributes: true,
+    // });
     ////
   }
   onClickAllDoc(e) {
