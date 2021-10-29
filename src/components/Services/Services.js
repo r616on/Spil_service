@@ -57,9 +57,6 @@ export default class Services {
       this.img.src = this.arr[element.dataset.id - 1].src;
       this.textTitle.innerText = this.arr[element.dataset.id - 1].title;
       this.textBody.innerText = this.arr[element.dataset.id - 1].text;
-
-      console.log(element.dataset.id);
-      console.log(this.img.src);
     }
   }
 }

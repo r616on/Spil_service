@@ -13,7 +13,7 @@
   position: absolute;
   width: 1850px;
   height: 138px;
-  left: -0px;
+  left: 0;
   top: -70px;
   max-width: 100%;
   font-family: "Gotham Pro";
@@ -21,9 +21,10 @@
   line-height: 138px;
   color: #ffffff;
   text-shadow: 0 -1px #e1e1e1, 1px 0 #e1e1e1, 0 1px #e1e1e1, -1px 0 #e1e1e1;
-  filter: blur(1px);
+  // filter: blur(1px);
   z-index: 1;
   overflow: hidden;
+  max-width: calc(100%);
 }
 .gallery__row {
   position: relative;

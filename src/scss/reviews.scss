@@ -26,7 +26,7 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 114.2%;
-  text-align: left;
+  text-align: center;
 }
 .reviews__cart {
   display: flex;
@@ -71,6 +71,9 @@
   text-align: left;
 }
 .reviews__cart__title__body__rating {
+  margin-top: 2px;
+  display: flex;
+  justify-content: flex-start;
 }
 .reviews__cart__title__body__rating__star {
 }
@@ -85,8 +88,9 @@
   font-family: "Gotham Pro";
   font-size: 15px;
   font-weight: 400;
-  line-height: 20.81px;
+  line-height: 138.7%;
   text-align: justify;
+  min-height: 368px;
 }
 .reviews__leaves {
   content: url("../img/reviews_leaves.png");
@@ -150,7 +154,6 @@
     margin-top: 45px;
   }
   .reviews__container {
-    padding: 0;
   }
   .reviews__row {
     margin-top: 26px;

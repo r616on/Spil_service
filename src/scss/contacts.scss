@@ -22,6 +22,7 @@
   background-size: auto 100%;
   z-index: 1;
   padding-left: 43px;
+  padding-right: 43px;
   padding-bottom: 56px;
   color: #ffffff;
   font-family: "Gotham Pro";
@@ -83,6 +84,8 @@
 .email__text {
 }
 .email__address {
+  text-decoration: none;
+  color: #ffffff;
   margin-top: 8px;
   font-size: 24px;
   line-height: 27.41px;
@@ -119,6 +122,11 @@
 @media (max-width: 540px) {
   .contacts__body__title {
     font-size: 60px;
+  }
+  .contacts__body__btn {
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
   }
 }
 @media (max-width: 400px) {
