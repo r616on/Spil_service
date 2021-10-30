@@ -1,5 +1,4 @@
 .about {
-  margin-top: 103px;
   position: relative;
 }
 .about::before {
@@ -27,7 +26,7 @@
   position: relative;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .about__left__row {
@@ -59,13 +58,13 @@
 .about__bg_branch::before {
   content: url("../img/about__branch.png");
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -464.35px;
+  top: -60px;
   width: 564.35px;
-  height: 389.29px;
-  transform: rotate(-3deg);
+  // transform: rotate(-3deg);
   z-index: 5;
   overflow: hidden;
+  max-width: calc(100% + 464.35px);
 }
 
 .about__right {
@@ -79,8 +78,8 @@
   text-align: left;
   position: relative;
   z-index: 3;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .about__logo {
   margin-top: 85px;
@@ -165,28 +164,32 @@
 }
 .hiden-text_four {
   left: -414px;
-  top: 360px;
+  top: 340px;
   overflow: hidden;
   max-width: calc(100% + 414px);
 }
 .about__left__row {
 }
+@media (min-width: 1920px) {
+  .about__right {
+    border-radius: 0;
+    background-size: auto 100%;
+    background-position: right;
+    height: 440px;
+  }
+}
 @media (max-width: 1740px) {
   .about__bg_branch::before {
-    left: -120px;
   }
 }
 @media (max-width: 1620px) {
 }
 @media (max-width: 1540px) {
-  .about__bg_branch::before {
-    display: none;
-  }
 }
 @media (max-width: 1050px) {
   .about__row {
     height: 410px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   .about__text {
     max-width: 350px;
@@ -197,13 +200,20 @@
   .hiden-text {
   }
   .hiden-text_two {
-    top: 200px;
+    top: 180px;
   }
   .hiden-text_three {
-    top: 320px;
+    top: 280px;
   }
 }
 @media (max-width: 770px) {
+  .about__bg_branch::before {
+    content: url("../img/about__branch_mobile.png");
+    display: block;
+    top: 190px;
+    left: -60px;
+    width: 220.5px;
+  }
   .about::before {
     width: 940px;
     font-size: 72px;
@@ -280,6 +290,17 @@
   .about {
     margin-bottom: 70px;
   }
+  .about__right {
+    height: 210px;
+  }
+  .about__bg_branch::before {
+    top: 100px;
+    left: -80px;
+    width: 220.5px;
+  }
+  .about__left__row {
+    top: 210px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -290,7 +311,9 @@
   .about__row {
   }
   .about__bg_branch::before {
-    display: none;
+    top: 80px;
+    left: -105px;
+    width: 220.5px;
   }
   .about__left__row {
     top: 182px;
@@ -315,7 +338,6 @@
   }
   .about__right {
     max-height: 187px;
-
     margin-left: 30px;
     img {
       max-width: 376px;
@@ -336,9 +358,9 @@
     top: -20px;
   }
   .hiden-text_three {
-    top: 90px;
+    top: 100px;
   }
   .hiden-text_four {
-    top: 190px;
+    top: 180px;
   }
 }

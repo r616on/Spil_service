@@ -44,6 +44,8 @@
   text-align: left;
   display: flex;
   align-self: center;
+  display: block;
+  cursor: pointer;
 }
 .header__location::before {
   content: url("../img/icon/geo.png");
