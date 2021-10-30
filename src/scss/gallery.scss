@@ -9,13 +9,12 @@
   z-index: 3;
 }
 .gallery::before {
-  content: "Галерея Галерея Галере";
+  content: "Галерея Галерея Галерея Галерея Галерея Галерея";
   position: absolute;
   width: 1850px;
-  height: 138px;
-  left: 0;
-  top: -70px;
-  max-width: 100%;
+  left: 40px;
+  top: -50px;
+  max-width: calc(100% - 40px);
   font-family: "Gotham Pro";
   font-size: 144px;
   line-height: 138px;
@@ -24,7 +23,7 @@
   // filter: blur(1px);
   z-index: 1;
   overflow: hidden;
-  max-width: calc(100%);
+  white-space: pre;
 }
 .gallery__row {
   position: relative;
@@ -77,6 +76,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .gallery__item {
     margin-right: 5px;
     margin-left: 5px;
@@ -103,6 +103,13 @@
 //   }
 // }
 @media (max-width: 575px) {
+  .gallery::before {
+    font-size: 72px;
+    width: 925px;
+    left: -242px;
+    max-width: calc(100% + 242px);
+    top: -62px;
+  }
   // .gallery__row {
   //   padding-left: 35px;
   //   padding-right: 35px;
@@ -136,10 +143,7 @@
   .gallery {
     margin-top: 42px;
   }
-  .gallery::before {
-    width: 100%;
-    top: -45px;
-  }
+
   .gallery__row {
     padding-left: 0;
     padding-right: 0;
