@@ -3,6 +3,7 @@ import Сalculator from "./Сalculator/Сalculator";
 import Burger from "./Burger/Burger";
 import { Fancybox } from "@fancyapps/ui";
 import Swiper from "swiper";
+import Request from "./Request/Request";
 
 import backgroundImage from "../img/buner_background.jpg";
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,4 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       disableOnInteraction: true,
     },
   });
+
+  const request = new Request();
+  request.bindToDOM();
 });

@@ -18,15 +18,15 @@
   font-style: bold;
 }
 
-/* @font-face {
-  font-family: "Gotham Pro";
-  src: url("../fonts/GothamProRegular.eot");
-  src: local("☺"), url("../fonts/GothamProRegular.woff") format("woff"),
-    url("../fonts/GothamProRegular.ttf") format("truetype"),
-    url("../fonts/GothamProRegular.svg") format("svg");
+@font-face {
+  font-family: "Gudea";
+  src: url("../fonts/Gudea-Regular.eot");
+  src: local("☺"), url("../fonts/Gudea-Regular.woff") format("woff"),
+    url("../fonts/Gudea-Regular.ttf") format("truetype"),
+    url("../fonts/Gudea-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
 @font-face {
   font-family: "Gotham Pro";

@@ -14,14 +14,26 @@
       <header class="header">
         <div class="header__row">
           <div class="header__top container">
-            <div class="header__name">Спил <span>/</span>деревьев</div>
+            <a href="./index.html" class="header__name"
+              ><div class="logo__row">
+                <div class="logo__icon"></div>
+                <div class="logo__text">
+                  <span class="text--Gotham">В</span>ысот
+                  <span class="text--Gotham">С</span>ервис
+                </div>
+              </div></a
+            >
             <div class="header__location">Омск</div>
             <div class="heder__right">
               <a href="tel:+79658791828" class="header__tel"
                 >+7 (965) 879-18-28</a
               >
-              <a href="#" class="btn header__WhatsApp">Написать в WhatsApp</a>
-              <a href="#" class="btn header__order">Заказать услугу</a>
+              <a href="https://wa.me/+79658791828" class="btn header__WhatsApp"
+                >Написать в WhatsApp</a
+              >
+              <a href="#" class="btn header__order request-сalculation"
+                >Заказать услугу</a
+              >
             </div>
           </div>
 
@@ -31,15 +43,23 @@
               <span class="burger_item"></span>
               <span class="burger_item green"></span>
             </div>
-            <div class="burger__logo header__name">
-              Спил <span>/</span>деревьев
-            </div>
+
+            <a href="./index.html" class="burger__logo header__name"
+              ><div class="logo__row">
+                <div class="logo__icon"></div>
+                <div class="logo__text">
+                  <span class="text--Gotham">В</span>ысот
+                  <span class="text--Gotham">С</span>ервис
+                </div>
+              </div></a
+            >
+
             <a href="#" class="burger__icon WhatsApp"></a>
             <a href="tel:+79658791828" class="burger__icon tel"></a>
           </div>
           <div class="header__nav container">
             <ul class="header__nav__row">
-              <li class="nav__item active">
+              <li class="nav__item">
                 <a class="nav__text" href="#our-services">Услуги </a>
               </li>
               <li class="nav__item">
@@ -59,7 +79,9 @@
               <div class="baner__text">
                 Оказываем услуги в сфере арбористики любой сложности
               </div>
-              <a href="#" class="btn baner__btn">Запросить расчет</a>
+              <a href="#" class="btn baner__btn request-сalculation"
+                >Запросить расчет</a
+              >
             </div>
           </div>
         </div>
@@ -110,10 +132,14 @@
               пишите в WhatsApp
             </div>
             <div class="our-services__text__header">
-              <a href="#" class="btn our-services__text__order"
+              <a
+                href="#"
+                class="btn our-services__text__order request-сalculation"
                 >Заказать услугу</a
               >
-              <a href="#" class="our-services__text__WhatsApp"
+              <a
+                href="https://wa.me/+79658791828"
+                class="our-services__text__WhatsApp"
                 >Написать в WhatsApp</a
               >
             </div>
@@ -125,26 +151,37 @@
         <div class="container-full about__bg_branch">
           <div class="container">
             <div class="about__left__row container">
-              <div class="about__logo">ЛОГОТИП</div>
+              <div class="about__logo">
+                <a href="./index.html" class="about__logo__link"
+                  ><div class="logo__row">
+                    <div class="logo__icon"></div>
+                    <div class="logo__text">
+                      <span class="text--Gotham">В</span>ысот
+                      <span class="text--Gotham">С</span>ервис
+                    </div>
+                  </div></a
+                >
+              </div>
               <div class="about__text">
-                Мы команда профессионалов “----”, работаем в сфере арбористики
-                более 5 лет. Выполняем заказы любого объёма и сложности.
+                Мы команда профессионалов “Высот Сервис”, работаем в сфере
+                арбористики более 5 лет. Выполняем заказы любого объёма и
+                сложности.
               </div>
             </div>
           </div>
           <div class="about__row container-full">
             <div class="about_hiden-text">
               <span class="hiden-text hiden-text_one"
-                >О компании О компании</span
+                >О компании О компании О компании О компании</span
               >
               <span class="hiden-text hiden-text_two"
-                >О компании О компании О компании</span
+                >О компании О компании О компании О компании</span
               >
               <span class="hiden-text hiden-text_three"
-                >О компании О компании</span
+                >О компании О компании О компании О компании</span
               >
               <span class="hiden-text hiden-text_four"
-                >О компании О компании О компании</span
+                >О компании О компании О компании О компании</span
               >
             </div>
             <div class="about__left"></div>
@@ -193,9 +230,9 @@
             <div class="tree-height calculator_item">
               <div class="tree-height__title">Высота дерева (метр)</div>
               <div class="tree-height__icon__row">
-                <div class="tree-height__icon left"></div>
+                <div class="tree-height__icon icon-Arrow_left left"></div>
                 <div class="tree-height__counter">1</div>
-                <div class="tree-height__icon right"></div>
+                <div class="tree-height__icon icon-Arrow_right right"></div>
               </div>
             </div>
             <div class="cramped-conditions calculator_item">
@@ -448,7 +485,9 @@
                       />
                     </div>
                     <div class="reviews__cart__title__body">
-                      <div class="reviews__cart__title__body__name">Елена</div>
+                      <div class="reviews__cart__title__body__name">
+                        Сергей Дмитриевич
+                      </div>
                       <div class="reviews__cart__title__body__rating">
                         <img
                           src="./img/icon/Star.png"
@@ -580,11 +619,19 @@
       </section>
       <section id="contacts" class="contacts container-full">
         <div class="contacts__map">
-          <img
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2291.272938231091!2d73.41999531579536!3d54.95077298034651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafdbdd16caab7%3A0xf4a88745148ff40e!2z0JLRi9GB0L7RgtGB0LXRgNCy0LjRgSDQsiDQntC80YHQutC1!5e0!3m2!1sru!2sru!4v1635528352307!5m2!1sru!2sru"
+            style="border: 0"
+            width="100%"
+            height="100%"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <!-- <img
             class="img contacts__map_img"
             src="./img/contacts/map.jpg"
             alt="карта"
-          />
+          /> -->
         </div>
         <div class="contacts__body">
           <div class="contacts__body__row">
@@ -603,7 +650,9 @@
             </div>
             <div class="contacts__body__text">Работаем по г.Омску</div>
             <a href="#">
-              <div class="contacts__body__btn btn">Запросить расчет</div></a
+              <div class="contacts__body__btn btn request-сalculation">
+                Запросить расчет
+              </div></a
             >
           </div>
         </div>
@@ -612,7 +661,17 @@
 
     <footer class="footer container">
       <div class="footer__logo">
-        <div class="footer__logo_img">Спил/деревьев</div>
+        <div class="footer__logo_img">
+          <a href="./index.html" class="header__name"
+            ><div class="logo__row">
+              <div class="logo__icon"></div>
+              <div class="logo__text">
+                <span class="text--Gotham">В</span>ысот
+                <span class="text--Gotham">С</span>ервис
+              </div>
+            </div></a
+          >
+        </div>
         <div class="footer__logo_text desktop">
           <span>Создано в</span> Klishin Agency
         </div>
@@ -623,7 +682,10 @@
         <a href="#" class="footer__social__icon insta"></a>
         <a href="#" class="footer__social__icon vk"></a>
         <a href="#" class="footer__social__icon telegram"></a>
-        <a href="#" class="footer__social__icon WhatsUp"></a>
+        <a
+          href="https://wa.me/+79658791828"
+          class="footer__social__icon WhatsUp"
+        ></a>
       </div>
       <div class="footer__logo_text develop_mobile">
         <a class="created__link" href="https://klishindesign.ru">

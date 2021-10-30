@@ -1,6 +1,9 @@
 import "./css/nulStyle.css";
 import "./scss/style.scss";
+
 import "./css/fonts.css";
+import "./css/iconFonts.css";
+
 import "./scss/main.scss";
 import "./scss/header.scss";
 import "./scss/footer.scss";

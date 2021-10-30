@@ -1,0 +1,25 @@
+@mixin size-logo($scale) {
+  .logo__row {
+    width: 191px * $scale;
+    max-width: 191px * $scale;
+    min-width: 191px * $scale;
+    height: 46px * $scale;
+    border-radius: 23px * $scale;
+
+    .logo__icon {
+      width: 41px * $scale;
+      height: 42px * $scale;
+      // margin-left: 11px;
+      left: 11px * $scale;
+    }
+    .logo__text {
+      font-size: 16px * $scale;
+      line-height: 20px * $scale;
+      letter-spacing: -0.04em * $scale;
+      margin-left: 65px * $scale;
+    }
+    .text--Gotham {
+      letter-spacing: -0.64px * $scale;
+    }
+  }
+}

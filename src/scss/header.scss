@@ -24,21 +24,14 @@
   align-items: center;
 }
 .header__name {
-  color: #1e1e1e;
-  font-family: "Gotham Pro";
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
-  /* Text style for "/" */
 }
-.header__name span {
-  color: #2dbc89;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+.header__name {
+  // &span {
+  //   color: #2dbc89;
+  //   font-style: normal;
+  //   letter-spacing: normal;
+  //   line-height: normal;
+  // }
 }
 .header__location {
   color: #1e1e1e;
@@ -132,15 +125,21 @@
   align-items: center;
   justify-content: center;
 
-  &.active {
-    background-color: #2dbc4c;
-    .nav__text {
-      color: #ffffff;
-      font-size: 16px;
-    }
+  // &.active {
+  //   background-color: #2dbc4c;
+  //   .nav__text {
+  //     color: #ffffff;
+  //     font-size: 16px;
+  //   }
+  // }
+}
+.nav__item:hover {
+  background-color: #2dbc4c;
+  .nav__text {
+    color: #ffffff;
+    font-size: 16px;
   }
 }
-
 .active {
   &.header__nav {
     display: flex;
@@ -330,20 +329,22 @@
 
 @media (max-width: 1300px) {
 }
-@media (max-width: 1000px) {
+@media (max-width: 1065px) {
   .header__WhatsApp {
     display: none;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 785px) {
   .header__location {
     display: none;
   }
+}
+@media (max-width: 700px) {
   .baner__titel {
     font-size: 43px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 715px) {
   .header {
     padding-top: 0;
   }
