@@ -37,6 +37,30 @@
   justify-content: center;
   flex-wrap: wrap;
   z-index: 3;
+  .one {
+    order: 1;
+  }
+  .two {
+    order: 2;
+  }
+  .three {
+    order: 3;
+  }
+  .four {
+    order: 4;
+  }
+  .five {
+    order: 5;
+  }
+  .six {
+    order: 6;
+  }
+  .seven {
+    order: 7;
+  }
+  .eight {
+    order: 8;
+  }
 }
 .gallery__item {
   width: 100%;
@@ -77,6 +101,30 @@
   .gallery__row {
     padding-left: 15px;
     padding-right: 15px;
+    .one {
+      order: 1;
+    }
+    .two {
+      order: 2;
+    }
+    .three {
+      order: 5;
+    }
+    .four {
+      order: 6;
+    }
+    .five {
+      order: 3;
+    }
+    .six {
+      order: 4;
+    }
+    .seven {
+      order: 7;
+    }
+    .eight {
+      order: 8;
+    }
   }
 
   .gallery__item {

@@ -33,10 +33,10 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"],
       },
-      {
-        test: /\.svg$/,
-        type: "asset/resource",
-      },
+      // {
+      //   test: /\.svg$/,
+      //   type: "asset/resource",
+      // },
     ],
   },
   plugins: [

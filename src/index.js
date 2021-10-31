@@ -14,8 +14,7 @@ import "./scss/gallery.scss";
 import "./scss/reviews.scss";
 import "./scss/contacts.scss";
 import "./scss/about.scss";
-// import "./scss/calculator.scss";
-
+import "./scss/privacy-policy.scss";
 // import "./components/templated/templated.css";
 import "./components/app";
 import "@fancyapps/ui/dist/fancybox.css";
