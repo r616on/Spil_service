@@ -49,9 +49,8 @@
 }
 
 .logo__row {
-  width: 191px;
-  max-width: 191px;
-  min-width: 191px;
+  max-width: 187px;
+  min-width: 187px;
   height: 46px;
   border-radius: 23px;
   background-color: #2dbc4c;
@@ -66,28 +65,35 @@
     // margin-left: 11px;
     position: absolute;
     bottom: 0;
-    left: 11px;
+    left: 9px;
   }
   .logo__text {
     color: #ffffff;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14.5px;
+    line-height: 1;
     letter-spacing: -0.04em;
     text-align: left;
-    font-family: "Gudea";
-    margin-left: 65px;
+    font-family: "Gotham Pro";
+    margin-left: 62px;
+    margin-bottom: 2px;
   }
   .text--Gotham {
     color: #ffffff;
     font-family: "Gotham Pro";
     font-weight: 400;
     font-style: normal;
-    letter-spacing: -0.64px;
+    letter-spacing: -0.04em;
     line-height: normal;
   }
 }
 .about__logo {
   @include size-logo(2.2);
+  .logo__text {
+    font-family: "Gudea";
+  }
+  .text--Gotham {
+    font-family: "Gotham Pro";
+  }
 }
 @media (max-width: 950px) {
   .about__logo {

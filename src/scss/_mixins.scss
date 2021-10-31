@@ -1,25 +1,40 @@
 @mixin size-logo($scale) {
   .logo__row {
-    width: 191px * $scale;
-    max-width: 191px * $scale;
-    min-width: 191px * $scale;
-    height: 46px * $scale;
+    max-width: 187px * $scale * 0.95;
+    min-width: 187px * $scale * 0.95;
+    height: 46px * $scale * 0.95;
     border-radius: 23px * $scale;
-
+    background-color: #2dbc4c;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     .logo__icon {
-      width: 41px * $scale;
-      height: 42px * $scale;
-      // margin-left: 11px;
-      left: 11px * $scale;
+      content: url("../img/icon/Logo.svg");
+      width: 41px * $scale * 0.95;
+      height: 42px * $scale * 0.95;
+      position: absolute;
+      bottom: 0;
+      left: 9px * $scale;
     }
     .logo__text {
-      font-size: 16px * $scale;
+      color: #ffffff;
+      font-size: 16px * $scale * 0.9;
       line-height: 20px * $scale;
       letter-spacing: -0.04em;
-      margin-left: 65px * $scale;
+      text-align: left;
+      font-family: "Gotham Pro";
+      margin-left: 62px * $scale * 0.95;
+      margin-bottom: 2px * $scale;
+      font-weight: 400;
     }
     .text--Gotham {
-      letter-spacing: -0.64px * $scale;
+      color: #ffffff;
+      font-family: "Gotham Pro";
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -0.04em;
+      line-height: normal;
     }
   }
 }
