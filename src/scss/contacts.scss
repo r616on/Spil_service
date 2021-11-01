@@ -7,6 +7,7 @@
 
 .contacts__map {
   width: 54.8%;
+  position: relative;
 }
 .contacts__map_img {
   object-fit: cover;
@@ -106,6 +107,25 @@
   display: flex;
   justify-content: center;
 }
+.btn-call {
+  position: absolute;
+  bottom: 25px;
+  right: 56px;
+  width: 290px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  color: #19782e;
+  z-index: 100;
+}
 @media (max-width: 1250px) {
   .contacts__body {
     background-position: left;
@@ -196,5 +216,8 @@
   }
   .contacts__body__title {
     font-size: 58px;
+  }
+  .btn-call {
+    width: 250px;
   }
 }
