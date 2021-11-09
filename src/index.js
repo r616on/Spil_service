@@ -7,7 +7,7 @@ import "./css/iconFonts.css";
 import "./scss/main.scss";
 import "./scss/header.scss";
 import "./scss/footer.scss";
-// import "./scss/calculator.scss";
+import "./scss/calculator.scss";
 import "./scss/choose-us.scss";
 import "./scss/our-services.scss";
 import "./scss/gallery.scss";

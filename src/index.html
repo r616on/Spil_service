@@ -7,7 +7,10 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Высот Сервис</title>
+    <title>ВысотСервис</title>
+    <!-- <link rel="icon" href="путь_к_иконке/favicon.ico" type="image/x-icon"> -->
+    <meta name="keywords" content=" Высот сервис, спил деревьев Омск, спил деревьев в Омске, фрезеровка пней Омск, кронирование деревьев Омск, вывоз порубочных остатков Омск, обрезка кустарников Омск"/>
+    <meta name="description" content=" ВысотСервис. Спил деревьев г. Омск.">
   </head>
   <body>
     <div class="container-full">
@@ -169,7 +172,7 @@
                 >
               </div>
               <div class="about__text">
-                Мы команда профессионалов “Высот Сервис”, работаем в сфере
+                Мы команда профессионалов “ВысотСервис”, работаем в сфере
                 арбористики более 5 лет. Выполняем заказы любого объёма и
                 сложности.
               </div>
@@ -195,7 +198,64 @@
           </div>
         </div>
       </section>
-      
+      <section class="calculator">
+  <div class="container">
+    <div class="calculator__title title">Калькулятор</div>
+    <div class="calculator__text text">
+      Введите данные и получите рассчет стоимости оналйн
+    </div>
+  </div>
+  <div class="container calculator__row">
+    <div class="calculator__row__left">
+      <div class="type-of-tree form-select calculator_item">
+        <span class="type-of-tree__title" data-id="0">Выберите вид дерева</span>
+        <div class="type-of-tree_opions">
+          <ul class="type-of-tree_opions__row">
+            <li class="opions__item" data-id="1">Берёза</li>
+            <li class="opions__item active" data-id="2">Осина</li>
+            <li class="opions__item" data-id="3">Сосна</li>
+            <li class="opions__item" data-id="4">Тополь</li>
+            <li class="opions__item" data-id="5">Клен</li>
+            <li class="opions__item" data-id="6">Лиственница</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="calculator__diameter calculator_item" data-size="4">
+        <div class="diameter__title">Диаметр дерева</div>
+        <div class="diameter__row">
+          <div class="diameter__item" data-size="2">До 30см</div>
+          <div class="diameter__item" data-size="3">До 40см</div>
+          <div class="diameter__item active" data-size="4">До 50см</div>
+          <div class="diameter__item" data-size="5">До 60см</div>
+          <div class="diameter__item" data-size="6">До 70см</div>
+          <div class="diameter__item" data-size="7">До 80см</div>
+        </div>
+      </div>
+    </div>
+    <div class="calculator__row__right">
+      <div class="tree-height calculator_item">
+        <div class="tree-height__title">Высота дерева (метр)</div>
+        <div class="tree-height__icon__row">
+          <div class="tree-height__icon icon-Arrow_left left"></div>
+          <div class="tree-height__counter">1</div>
+          <div class="tree-height__icon icon-Arrow_right right"></div>
+        </div>
+      </div>
+      <div class="cramped-conditions calculator_item">
+        Стеснённые условия
+        <div class="conditions_btn switch-btn active"></div>
+      </div>
+      <div class="calculator__total">
+        <div class="total__text">Итоговая стоимость от:</div>
+        <div class="total__num">0.000</div>
+      </div>
+    </div>
+  </div>
+  <div class="container calculator__price-estimated">
+    Стоимость ориентировочная и не является офертой
+  </div>
+</section>
 
      <section id="choose-us" class="choose-us container-full">
         <div class="choose-us__background">

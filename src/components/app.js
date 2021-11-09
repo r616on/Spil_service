@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const services = new Services(".our-services");
     services.bindToDOM();
   }
-  // if (document.querySelector(".calculator")) {
-  //   const calculator = new Сalculator(".calculator");
-  //   calculator.bindToDOM();
-  // }
+  if (document.querySelector(".calculator")) {
+    const calculator = new Сalculator(".calculator");
+    calculator.bindToDOM();
+  }
   if (document.querySelector(".swiper")) {
     const swiper = new Swiper(".swiper", {
       loop: true,
